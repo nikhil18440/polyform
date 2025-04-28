@@ -34,8 +34,10 @@ function validateNode(node, path = 'root') {
       validateNode(child, `${path} > ${node.type}[${index}]`);
     });
   }
+
+  return true
 }
 
 export function validateSchema(schema) {
-  validateNode(schema);
+  return validateNode(schema);
 }

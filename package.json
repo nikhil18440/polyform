@@ -2,6 +2,9 @@
   "name": "polyform",
   "version": "1.0.0",
   "main": "index.js",
+  "bin": {
+    "polyform": "./cli.js"
+  },
   "directories": {
     "test": "jest"
   },
